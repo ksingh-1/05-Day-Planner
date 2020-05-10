@@ -116,3 +116,79 @@ else if ((currentTime >= timeSlot5pm)&& (currentTime<timeSlot6pm)){
 else if (currentTime>=timeSlot6pm){
     $("#5pm").addClass("past")
 };
+
+
+// On Click
+
+var activity9am=localStorage.getItem("9amActivity");
+$("#9am").text(activity9am);
+
+$(".btnfor9").on("click", function (event) {
+    var renderActivity9am=$("#9am").text();
+    localStorage.setItem("9amActivity", (renderActivity9am));
+});
+
+
+var activity9am=localStorage.getItem("9amActivity");
+$("#9am").text(activity9am);
+
+$(".btnfor9").on("click", function (event) {
+    var renderActivity9am=$("#9am").text();
+    localStorage.setItem("9amActivity", (renderActivity9am));
+});
+
+var activity9am=localStorage.getItem("9amActivity");
+$("#9am").text(activity9am);
+
+$(".btnfor9").on("click", function (event) {
+    var renderActivity9am=$("#9am").text();
+    localStorage.setItem("9amActivity", (renderActivity9am));
+});
+
+var activity9am=localStorage.getItem("9amActivity");
+$("#9am").text(activity9am);
+
+$(".btnfor9").on("click", function (event) {
+    var renderActivity9am=$("#9am").text();
+    localStorage.setItem("9amActivity", (renderActivity9am));
+});
+
+var activity9am=localStorage.getItem("9amActivity");
+$("#9am").text(activity9am);
+
+$(".btnfor9").on("click", function (event) {
+    var renderActivity9am=$("#9am").text();
+    localStorage.setItem("9amActivity", (renderActivity9am));
+});
+
+var activity9am=localStorage.getItem("9amActivity");
+$("#9am").text(activity9am);
+
+$(".btnfor9").on("click", function (event) {
+    var renderActivity9am=$("#9am").text();
+    localStorage.setItem("9amActivity", (renderActivity9am));
+});
+
+var activity9am=localStorage.getItem("9amActivity");
+$("#9am").text(activity9am);
+
+$(".btnfor9").on("click", function (event) {
+    var renderActivity9am=$("#9am").text();
+    localStorage.setItem("9amActivity", (renderActivity9am));
+});
+
+var activity9am=localStorage.getItem("9amActivity");
+$("#9am").text(activity9am);
+
+$(".btnfor9").on("click", function (event) {
+    var renderActivity9am=$("#9am").text();
+    localStorage.setItem("9amActivity", (renderActivity9am));
+});
+
+var activity9am=localStorage.getItem("9amActivity");
+$("#9am").text(activity9am);
+
+$(".btnfor9").on("click", function (event) {
+    var renderActivity9am=$("#9am").text();
+    localStorage.setItem("9amActivity", (renderActivity9am));
+});
