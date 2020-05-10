@@ -1,22 +1,25 @@
-$(document).ready(function (){
+$(document).ready(function () {
     // window.setInterval(function() {
-        var currentTime=moment().format("MMMM Do YYYY, h:mm:ss a");
-        $("#currentDay").text(currenttime);
-//         renderBlock();
-//     }
-// }, 1000);
+//         let currentTime=moment().format('dddd, MMMM Do YYYY');
+//         $('#currentDay').text(currentDay);
+// //         renderBlock();
+// //     }
+// // }, 1000);
+
+    var currentDay=moment();
+    $("#currentDay").text(currentDay)
 
     var currentTime=(moment()).toString();
-    var timeSlot9am=(moment('09:00', 'HH:MM')).toString();
-    var timeSlot10am=(moment('10:00', 'HH:MM')).toString();
-    var timeSlot11am=(moment('11:00', 'HH:MM')).toString();
-    var timeSlot12pm=(moment('12:00', 'HH:MM')).toString();
-    var timeSlot1pm=(moment('13:00', 'HH:MM')).toString();
-    var timeSlot2pm=(moment('14:00', 'HH:MM')).toString();
-    var timeSlot3pm=(moment('15:00', 'HH:MM')).toString();
-    var timeSlot4pm=(moment('16:00', 'HH:MM')).toString();
-    var timeSlot5pm=(moment('17:00', 'HH:MM')).toString();
-    var timeSlot6pm=(moment('18:00', 'HH:MM')).toString();
+    var timeSlot9am=(moment('09:00', 'HH:mm')).toString();
+    var timeSlot10am=(moment('10:00', 'HH:mm')).toString();
+    var timeSlot11am=(moment('11:00', 'HH:mm')).toString();
+    var timeSlot12pm=(moment('12:00', 'HH:mm')).toString();
+    var timeSlot1pm=(moment('13:00', 'HH:mm')).toString();
+    var timeSlot2pm=(moment('14:00', 'HH:mm')).toString();
+    var timeSlot3pm=(moment('15:00', 'HH:mm')).toString();
+    var timeSlot4pm=(moment('16:00', 'HH:mm')).toString();
+    var timeSlot5pm=(moment('17:00', 'HH:mm')).toString();
+    var timeSlot6pm=(moment('18:00', 'HH:mm')).toString();
 
 // Time Slot 9am
     if (currentTime<timeSlot9am){
@@ -123,7 +126,7 @@ $(document).ready(function (){
     var activity9am=localStorage.getItem("9amActivity");
     $("#9am").text(activity9am);
 
-    $(".btnfor9").on("click", function (event) {
+    $(".btn9").on("click", function (event) {
         var renderActivity9am=$("#9am").text();
         localStorage.setItem("9amActivity", (renderActivity9am));
     });
@@ -132,7 +135,7 @@ $(document).ready(function (){
     var activity10am=localStorage.getItem("10amActivity");
     $("#10am").text(activity10am);
 
-    $(".btnfor10").on("click", function (event) {
+    $(".btn10").on("click", function (event) {
         var renderActivity10am=$("#10am").text();
         localStorage.setItem("10amActivity", (renderActivity10am));
     });
@@ -141,7 +144,7 @@ $(document).ready(function (){
     var activity11am=localStorage.getItem("11amActivity");
     $("#11am").text(activity11am);
 
-    $(".btnfor11").on("click", function (event) {
+    $(".btn11").on("click", function (event) {
         var renderActivity11am=$("#11am").text();
         localStorage.setItem("11amActivity", (renderActivity11am));
     });
@@ -150,7 +153,7 @@ $(document).ready(function (){
     var activity12pm=localStorage.getItem("12pmActivity");
     $("#12pm").text(activity12pm);
 
-    $(".btnfor12").on("click", function (event) {
+    $(".btn12").on("click", function (event) {
         var renderActivity12pm=$("#12pm").text();
         localStorage.setItem("12pmActivity", (renderActivity12pm));
 });
@@ -159,7 +162,7 @@ $(document).ready(function (){
     var activity1pm=localStorage.getItem("1pmActivity");
     $("#1pm").text(activity1pm);
 
-    $(".btnfor1").on("click", function (event) {
+    $(".btn1").on("click", function (event) {
         var renderActivity1pm=$("#1pm").text();
         localStorage.setItem("1pmActivity", (renderActivity1pm));
 });
@@ -168,7 +171,7 @@ $(document).ready(function (){
     var activity2pm=localStorage.getItem("2pmActivity");
     $("2pm").text(activity2pm);
 
-    $(".btnfor4").on("click", function (event) {
+    $(".btn4").on("click", function (event) {
         var renderActivity2pm=$("#2pm").text();
         localStorage.setItem("2pmActivity", (renderActivity2pm));
 });
@@ -177,7 +180,7 @@ $(document).ready(function (){
     var activity3pm=localStorage.getItem("3pmActivity");
     $("#3pm").text(activity3pm);
 
-    $(".btnfor3").on("click", function (event) {
+    $(".btn3").on("click", function (event) {
         var renderActivity3pm=$("#3pm").text();
         localStorage.setItem("3pmActivity", (renderActivity3pm));
         });
@@ -186,7 +189,7 @@ $(document).ready(function (){
     var activity4pm=localStorage.getItem("4pmActivity");
     $("#4pm").text(activity4pm);
 
-    $(".btnfor4").on("click", function (event) {
+    $(".btn4").on("click", function (event) {
         var renderActivity4pm=$("#4pm").text();
         localStorage.setItem("4pmActivity", (renderActivity4pm));
     });
@@ -195,7 +198,7 @@ $(document).ready(function (){
     var activity5pm=localStorage.getItem("5pmActivity");
     $("#5pm").text(activity5pm);
 
-    $(".btnfor5").on("click", function (event) {
+    $(".btn5").on("click", function (event) {
         var renderActivity5pm=$("#5pm").text();
         localStorage.setItem("5pmActivity", (renderActivity5pm));
     });
